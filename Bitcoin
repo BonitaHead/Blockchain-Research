@@ -65,8 +65,8 @@ Previous Transaction
         |
         v
    New Transaction
-      /       \
-     /         \
+      /       \\
+     /         \\
 New UTXO     New UTXO
 
 A wallet balance therefore represents the aggregate value of UTXOs controlled by the wallet rather than a single account balance.
@@ -412,8 +412,7 @@ My approach to blockchain research draws upon a broader technical background tha
 - Systems administration
 - Computer networking
 - Telecommunications
-- Incident handling
-- Disaster recovery
+- Incident handling/disaster recovery
 - Cybersecurity
 - OSINT/reconnaissance training
 - Root-cause analysis
@@ -465,7 +464,54 @@ Additional evidence may be required for attribution.
 
 ---
 
-## 16. Future Research
+## 16. Bitcoin Transaction Analysis Case Study
+
+**Status:** Verified case-study data prepared for portfolio documentation
+
+**Network:** Bitcoin mainnet
+
+**Transaction ID (TXID):**
+`a19826394b38fe4e83322b4cd2f64d4bf335e5eb46f51976893efda6b089405f`
+
+### Transaction Overview
+
+| Field | Value |
+|---|---:|
+| Inputs | 1 |
+| Outputs | 15 |
+| Total input value | 17.13205820 BTC |
+| Total output value | 17.13202221 BTC |
+| Transaction fee | 0.00003599 BTC (3,599 satoshis) |
+| Approximate fee rate | 1.10 sat/vB |
+| Transaction size | 3,270 bytes |
+| Transaction weight | approximately 8,312 WU |
+| Virtual size | approximately 3,276 vB |
+| Locktime | 0 |
+| Replace-by-fee (RBF) | Not signaled |
+
+### Analytical Significance
+
+This transaction provides a practical example of Bitcoin's UTXO model and demonstrates how a single transaction can consume one previous output and distribute value across multiple new outputs while paying a network fee.
+
+The analysis separates directly observable transaction evidence from interpretation. The existence of multiple outputs is observable on-chain; the real-world identity, intent, or business purpose of the parties controlling those outputs cannot be established from the transaction alone.
+
+### Research Methodology
+
+The case study uses publicly observable blockchain data and examines:
+
+1. Transaction structure
+2. Input/output relationships
+3. Value conservation
+4. Transaction fee calculation
+5. Output distribution
+6. Address-level observations
+7. Limits on attribution
+
+The case study is intended to demonstrate practical blockchain-analysis capability rather than claim attribution to a specific person or organization.
+
+---
+
+## 17. Future Research
 
 Planned extensions include:
 
@@ -481,7 +527,7 @@ Planned extensions include:
 
 ---
 
-## 17. Research Status
+## 18. Research Status
 
 **Status:** Active Research Project
 
